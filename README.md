@@ -1,3 +1,5 @@
+# Nightmare Fuel Games .clang-format template.
+
 ![Before and After](./before_after_clang_format.gif)
 
 
