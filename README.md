@@ -1,11 +1,13 @@
 ![Before and After](./before_after_clang_format.gif)
 
-# Clang Format for Unreal Engine C++
+
+
+## Clang Format for Unreal Engine C++
 Automatically format your Unreal Engine C++ as per [Epic's Coding Standard](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/DevelopmentSetup/CodingStandard/).
 
 The purpose of this repository is to provide a Clang-Format configuration for Unreal Engine C++ and instructions for how to use it.
 
-## Get the .clang-format file
+### Get the .clang-format file
 [.clang-format file](./.clang-format)
 
 ## VS Code
@@ -21,13 +23,13 @@ The purpose of this repository is to provide a Clang-Format configuration for Un
 	},
 ```
 
-## Visual Studio
+### Visual Studio
 1. Go to the root of you project, `File->Add New Item->ClangFormat File`.
 2. Copy+Paste the contents of the .clang-format from this repository into the newly generated `.clang-format` file. 
 3. You can now format files with `Ctrl+K+D`
 
 **Optional:** You can enable `format on save` by installing [this extension](https://marketplace.visualstudio.com/items?itemName=mynkow.FormatdocumentonSave).
 
-## Limitations
+### Limitations
 1. Method chaining is not supported by clang-format and offers inconsistent results, especially inside of square brackets (`[`, `]`) such as used extensively by Slate.
 2. Single-line lambdas are incompatible with Allman-style brace wrapping and cannot be supported with the currently available ruleset.
